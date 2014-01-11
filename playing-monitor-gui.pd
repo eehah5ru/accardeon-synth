@@ -1,0 +1,22 @@
+#N canvas 0 22 831 490 10;
+#X obj 108 117 hsl 200 20 0 1 0 0 empty \$0-playing-position-1 track_1
+62 9 0 14 -262144 -1 -1 3234 1;
+#X obj 109 149 hsl 200 20 0 1 0 0 empty \$0-playing-position-2 track_2
+62 9 0 14 -262144 -1 -1 14887 1;
+#X obj 462 38 inlet;
+#X obj 109 185 hsl 200 20 0 1 0 0 empty \$0-playing-position-3 track_3
+62 9 0 14 -262144 -1 -1 0 1;
+#X obj 110 217 hsl 200 20 0 1 0 0 empty \$0-playing-position-4 track_4
+62 9 0 14 -262144 -1 -1 0 1;
+#X obj 461 105 unpack f f f f;
+#X text 507 35 list of 4 playing positions;
+#X obj 459 153 s \$0-playing-position-1;
+#X obj 494 177 s \$0-playing-position-2;
+#X obj 532 198 s \$0-playing-position-3;
+#X obj 559 229 s \$0-playing-position-4;
+#X connect 2 0 5 0;
+#X connect 5 0 7 0;
+#X connect 5 1 8 0;
+#X connect 5 2 9 0;
+#X connect 5 3 10 0;
+#X coords 0 -1 1 1 220 160 1 100 100;

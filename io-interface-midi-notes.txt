@@ -1,0 +1,8 @@
+init-bang 40
+decrease-volume 50
+increase-volume 52
+mute-volume 53
+track-ctrl-1 49
+track-ctrl-2 51
+track-ctrl-3 54
+track-ctrl-4 56

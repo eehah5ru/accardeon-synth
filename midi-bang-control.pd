@@ -1,0 +1,15 @@
+#N canvas 192 304 758 438 10;
+#X obj 242 33 inlet;
+#X obj 242 65 float;
+#X text 289 31 midi note to select;
+#X obj 61 33 inlet;
+#X text 100 33 input midi stream;
+#X obj 146 112 select;
+#X obj 149 184 outlet;
+#X obj 148 151 bang;
+#X text 205 183 output bang;
+#X connect 0 0 1 0;
+#X connect 1 0 5 1;
+#X connect 3 0 5 0;
+#X connect 5 0 7 0;
+#X connect 7 0 6 0;

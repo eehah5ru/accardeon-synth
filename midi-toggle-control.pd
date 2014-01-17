@@ -1,0 +1,16 @@
+#N canvas 421 371 658 329 10;
+#X obj 73 24 inlet;
+#X obj 306 23 inlet;
+#X text 352 19 midi note to select;
+#X text 114 23 midi stream;
+#X obj 172 83 select;
+#X obj 170 188 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 171 218 outlet;
+#X obj 174 138 bang;
+#X text 220 214 out 1/0 as toggle;
+#X connect 0 0 4 0;
+#X connect 1 0 4 1;
+#X connect 4 0 7 0;
+#X connect 5 0 6 0;
+#X connect 7 0 5 0;

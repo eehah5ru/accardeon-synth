@@ -1,4 +1,4 @@
-#N canvas 180 22 791 635 10;
+#N canvas 310 26 791 635 10;
 #N canvas 772 357 450 300 voice-output 0;
 #X obj 87 182 dac~;
 #X obj 91 49 inlet~;
@@ -85,8 +85,8 @@
 #X text 29 353 players;
 #X obj 118 174 io-interface-core;
 #X obj 407 119 io-interface-midi;
-#X obj 423 170 print;
 #X obj 407 88 r \$0-init-bang;
+#X obj 423 170 print control-message;
 #X connect 1 0 20 0;
 #X connect 4 0 0 1;
 #X connect 5 0 6 0;
@@ -100,5 +100,5 @@
 #X connect 20 1 2 0;
 #X connect 20 2 8 0;
 #X connect 21 0 20 0;
-#X connect 21 0 22 0;
-#X connect 23 0 21 0;
+#X connect 21 0 23 0;
+#X connect 22 0 21 0;

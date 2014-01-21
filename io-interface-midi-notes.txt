@@ -1,4 +1,5 @@
 init-bang 36
+2nd-bank-enabled 47
 decrease-volume 48
 increase-volume 50
 mute-volume 49

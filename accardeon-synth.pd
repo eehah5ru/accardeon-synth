@@ -1,4 +1,4 @@
-#N canvas 184 22 1280 752 10;
+#N canvas 272 22 1280 752 10;
 #N canvas 772 357 450 300 voice-output 0;
 #X obj 87 182 dac~;
 #X obj 91 49 inlet~;
@@ -99,7 +99,9 @@
 #X obj 73 8 r \$0-init-bang;
 #X obj 519 174 r \$0-2nd-bank-enabled;
 #X obj 852 471 r \$0-playing-positions-1;
+#X obj 183 615 print volume;
 #X connect 3 0 0 1;
+#X connect 3 0 30 0;
 #X connect 4 0 5 0;
 #X connect 8 0 0 0;
 #X connect 9 0 10 0;

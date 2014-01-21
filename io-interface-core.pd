@@ -128,15 +128,16 @@
 #N canvas 401 261 760 378 parse-commands-stream 0;
 #X obj 91 21 inlet;
 #X text 135 17 commands stream;
-#X obj 91 133 s \$0-init-bang;
-#X obj 161 163 s \$0-increase-volume;
-#X obj 232 187 s \$0-decrease-volume;
-#X obj 306 212 s \$0-mute-volume;
-#X obj 375 253 s \$0-track-ctrl;
-#X obj 461 223 s \$0-track-speed-message;
-#X obj 91 84 route init-bang increase-volume decrease-volume mute-volume
+#X obj 91 159 s \$0-init-bang;
+#X obj 161 189 s \$0-increase-volume;
+#X obj 232 213 s \$0-decrease-volume;
+#X obj 306 238 s \$0-mute-volume;
+#X obj 375 279 s \$0-track-ctrl;
+#X obj 461 249 s \$0-track-speed-message;
+#X obj 91 110 route init-bang increase-volume decrease-volume mute-volume
 track-ctrl track-speed 2nd-bank-enabled;
-#X obj 496 187 s \$0-2nd-bank-enabled;
+#X obj 496 213 s \$0-2nd-bank-enabled;
+#X obj 522 153 print unknown command;
 #X connect 0 0 8 0;
 #X connect 8 0 2 0;
 #X connect 8 1 3 0;
@@ -145,6 +146,7 @@ track-ctrl track-speed 2nd-bank-enabled;
 #X connect 8 4 6 0;
 #X connect 8 5 7 0;
 #X connect 8 6 9 0;
+#X connect 8 7 10 0;
 #X restore 100 133 pd parse-commands-stream;
 #X obj 28 487 r \$0-track-ctrl;
 #X obj 448 502 r \$0-track-speed;

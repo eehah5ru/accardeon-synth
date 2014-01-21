@@ -16,35 +16,55 @@
 -262144 -1 -1 0 1;
 #X obj 94 169 tgl 30 0 \$0-start-stop-4 \$0-start-stop-4 4 7 14 0 25
 -262144 -1 -1 0 1;
-#X obj 11 228 r \$0-init-bang;
-#X obj 295 440 outlet;
-#X text 354 437 send mesage according to output protocol;
-#X msg 12 261 init-bang;
-#X obj 245 229 r \$0-increase-volume;
-#X obj 110 228 r \$0-decrease-volume;
-#X obj 378 229 r \$0-mute-volume;
-#X msg 110 260 decrease-volume;
-#X msg 244 263 increase-volume;
-#X obj 523 195 r \$0-start-stop-1;
-#X obj 642 196 r \$0-start-stop-2;
-#X obj 877 196 r \$0-start-stop-4;
-#X obj 758 196 r \$0-start-stop-3;
-#X msg 523 234 1 \$1;
-#X msg 644 234 2 \$1;
-#X msg 760 230 3 \$1;
-#X msg 878 231 4 \$1;
-#X msg 688 300 track-ctrl \$1 \$2;
-#X text 283 17 output interface: init-bang - init bang increase-volume
-- increase volume decrease-volume - decrease volume mute-volume 0/1
-- mute volume track-ctrl <track no> 1/0 - track playing control;
-#X msg 377 263 mute-volume \$1;
+#X obj 25 354 r \$0-init-bang;
+#X obj 309 566 outlet;
+#X text 368 563 send mesage according to output protocol;
+#X msg 26 387 init-bang;
+#X obj 259 355 r \$0-increase-volume;
+#X obj 124 354 r \$0-decrease-volume;
+#X obj 392 355 r \$0-mute-volume;
+#X msg 124 386 decrease-volume;
+#X msg 258 389 increase-volume;
+#X obj 537 321 r \$0-start-stop-1;
+#X obj 656 322 r \$0-start-stop-2;
+#X obj 891 322 r \$0-start-stop-4;
+#X obj 772 322 r \$0-start-stop-3;
+#X msg 537 360 1 \$1;
+#X msg 658 360 2 \$1;
+#X msg 774 356 3 \$1;
+#X msg 892 357 4 \$1;
+#X msg 702 426 track-ctrl \$1 \$2;
+#X msg 391 389 mute-volume \$1;
 #X obj 79 18 inlet;
 #X text 122 17 init bang from io-core;
+#X obj 3 200 bng 30 250 50 0 \$0-track-speed-1 \$0-track-speed-1 empty
+8 14 0 24 -262144 -1 -1;
+#X obj 34 200 bng 30 250 50 0 \$0-track-speed-2 \$0-track-speed-2 empty
+8 14 0 24 -262144 -1 -1;
+#X obj 63 200 bng 30 250 50 0 \$0-track-speed-3 \$0-track-speed-3 empty
+8 14 0 24 -262144 -1 -1;
+#X obj 94 200 bng 30 250 50 0 \$0-track-speed-4 \$0-track-speed-4 empty
+8 14 0 24 -262144 -1 -1;
+#X text 128 175 track ctrl;
+#X text 130 207 track speed;
+#X obj 1034 357 r \$0-track-speed-1;
+#X msg 1034 385 1;
+#X obj 1165 357 r \$0-track-speed-2;
+#X obj 1292 356 r \$0-track-speed-3;
+#X obj 1418 355 r \$0-track-speed-4;
+#X msg 1165 385 2;
+#X msg 1292 384 3;
+#X msg 1418 384 4;
+#X msg 1216 435 track-speed \$1;
+#X text 283 17 output interface: init-bang - init bang increase-volume
+- increase volume decrease-volume - decrease volume mute-volume 0/1
+- mute volume track-ctrl <track no> 1/0 - track playing control \;
+track-speed <track no> bang to change track speed;
 #X connect 9 0 12 0;
 #X connect 12 0 10 0;
 #X connect 13 0 17 0;
 #X connect 14 0 16 0;
-#X connect 15 0 28 0;
+#X connect 15 0 27 0;
 #X connect 16 0 10 0;
 #X connect 17 0 10 0;
 #X connect 18 0 22 0;
@@ -56,5 +76,14 @@
 #X connect 24 0 26 0;
 #X connect 25 0 26 0;
 #X connect 26 0 10 0;
-#X connect 28 0 10 0;
-#X coords 0 -1 1 1 200 100 2 2 100;
+#X connect 27 0 10 0;
+#X connect 36 0 37 0;
+#X connect 37 0 44 0;
+#X connect 38 0 41 0;
+#X connect 39 0 42 0;
+#X connect 40 0 43 0;
+#X connect 41 0 44 0;
+#X connect 42 0 44 0;
+#X connect 43 0 44 0;
+#X connect 44 0 10 0;
+#X coords 0 -1 1 1 200 130 2 2 100;

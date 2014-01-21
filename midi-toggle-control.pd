@@ -17,10 +17,10 @@
 #X obj 112 60 t f b;
 #X obj 481 90 route symbol;
 #X obj 155 186 t b b;
-#X msg 167 322 \$1;
 #X obj 167 372 outlet;
 #X obj 167 288 pack s f;
-#X connect 0 0 19 1;
+#X msg 167 322 \$1 \$2;
+#X connect 0 0 18 1;
 #X connect 1 0 14 0;
 #X connect 3 0 4 0;
 #X connect 4 0 16 0;
@@ -29,12 +29,12 @@
 #X connect 9 0 10 1;
 #X connect 9 0 15 1;
 #X connect 10 0 11 0;
-#X connect 11 0 19 0;
+#X connect 11 0 18 0;
 #X connect 12 0 3 1;
 #X connect 14 0 3 0;
 #X connect 14 1 12 0;
 #X connect 15 0 12 1;
 #X connect 16 0 10 0;
 #X connect 16 1 0 0;
-#X connect 17 0 18 0;
+#X connect 18 0 19 0;
 #X connect 19 0 17 0;

@@ -1,8 +1,12 @@
-init-bang 48
-decrease-volume 50
-increase-volume 52
-mute-volume 53
-track-ctrl 1 49
-track-ctrl 2 51
-track-ctrl 3 54
-track-ctrl 4 56
+init-bang 36
+decrease-volume 48
+increase-volume 50
+mute-volume 49
+track-ctrl 1 60
+track-ctrl 2 62
+track-ctrl 3 65
+track-ctrl 4 67
+track-speed 1 61
+track-speed 2 63
+track-speed 3 66
+track-speed 4 68

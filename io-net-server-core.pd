@@ -1,0 +1,7 @@
+#N canvas 606 138 633 553 10;
+#X obj 67 475 outlet init-reset-bang;
+#X obj 329 468 outlet ctrl-message;
+#X obj 78 36 inlet init-bang;
+#X obj 312 253 netreceive 3000 1;
+#X connect 2 0 0 0;
+#X connect 3 0 1 0;

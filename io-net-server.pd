@@ -1,0 +1,15 @@
+#N canvas 415 22 931 539 10;
+#X obj 518 107 read-config-file;
+#X msg 519 71 io-net-client-ui.config;
+#X obj 519 38 loadbang;
+#X obj 441 30 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 518 265 io-state-machine;
+#X obj 611 301 print control-message;
+#X obj 518 204 io-net-server-core;
+#X connect 0 0 6 0;
+#X connect 1 0 0 0;
+#X connect 2 0 1 0;
+#X connect 3 0 1 0;
+#X connect 4 1 5 0;
+#X connect 6 0 4 0;

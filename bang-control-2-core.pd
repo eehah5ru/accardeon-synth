@@ -1,0 +1,13 @@
+#N canvas 305 118 868 515 10;
+#X obj 158 161 bang;
+#X text 322 337 output bang;
+#X obj 172 258 list;
+#X msg 176 300 \$1 \$2;
+#X obj 158 351 outlet output-message;
+#X obj 71 42 inlet input-bang;
+#X obj 367 42 inlet message-to-output;
+#X connect 0 0 2 0;
+#X connect 2 0 3 0;
+#X connect 3 0 4 0;
+#X connect 5 0 0 0;
+#X connect 6 0 2 1;

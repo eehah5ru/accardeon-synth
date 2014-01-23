@@ -1,0 +1,23 @@
+#N canvas 70 136 896 447 10;
+#X obj 197 218 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 193 155 bang;
+#X obj 193 182 t b b;
+#X obj 244 268 unpack s f;
+#X obj 205 308 pack s f f;
+#X msg 205 342 \$1 \$2 \$3;
+#X obj 255 245 list;
+#X obj 205 392 outlet output-message;
+#X obj 133 43 inlet input-bang;
+#X obj 361 42 inlet output-message;
+#X connect 0 0 4 2;
+#X connect 1 0 2 0;
+#X connect 2 0 6 0;
+#X connect 2 1 0 0;
+#X connect 3 0 4 0;
+#X connect 3 1 4 1;
+#X connect 4 0 5 0;
+#X connect 5 0 7 0;
+#X connect 6 0 3 0;
+#X connect 8 0 1 0;
+#X connect 9 0 6 1;

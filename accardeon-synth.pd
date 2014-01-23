@@ -1,4 +1,4 @@
-#N canvas 272 22 1280 752 10;
+#N canvas 320 22 1280 752 10;
 #N canvas 772 357 450 300 voice-output 0;
 #X obj 87 182 dac~;
 #X obj 91 49 inlet~;
@@ -23,9 +23,9 @@
 #X obj 585 115 print;
 #X text 849 442 debug playing positions of tracks;
 #X obj 129 263 io-interface-core;
-#X obj 418 208 io-interface-midi;
-#X obj 418 177 r \$0-init-bang;
-#X obj 434 259 print control-message;
+#X obj 391 174 io-interface-midi;
+#X obj 391 143 r \$0-init-bang;
+#X obj 407 206 print control-message;
 #X obj 128 32 io-interface-gui;
 #X obj 167 362 s \$0-track-speed;
 #X obj 145 212 print control-message;
@@ -97,9 +97,15 @@
 #X obj 508 491 r \$0-track-speed;
 #X obj 199 341 s \$0-2nd-bank-enabled;
 #X obj 73 8 r \$0-init-bang;
-#X obj 519 174 r \$0-2nd-bank-enabled;
+#X obj 492 140 r \$0-2nd-bank-enabled;
 #X obj 852 471 r \$0-playing-positions-1;
 #X obj 183 615 print volume;
+#X obj 760 101 read-config-file;
+#X obj 761 32 loadbang;
+#X obj 760 194 io-state-machine;
+#X obj 853 230 print control-message;
+#X obj 760 133 io-net-server-core;
+#X msg 761 65 io-net-server-ui.config;
 #X connect 3 0 0 1;
 #X connect 3 0 30 0;
 #X connect 4 0 5 0;
@@ -124,3 +130,10 @@
 #X connect 27 0 16 0;
 #X connect 28 0 13 1;
 #X connect 29 0 7 0;
+#X connect 31 0 35 0;
+#X connect 32 0 36 0;
+#X connect 33 1 34 0;
+#X connect 33 1 12 0;
+#X connect 35 0 33 0;
+#X connect 35 1 33 1;
+#X connect 36 0 31 0;

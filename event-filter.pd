@@ -1,0 +1,17 @@
+#N canvas 0 22 1052 531 10;
+#X obj 323 41 inlet events-stream;
+#X obj 53 44 inlet event-to-filter-and-reset;
+#X text 199 479 output bang;
+#X obj 294 479 outlet output-message;
+#X obj 75 480 outlet output-bang;
+#X obj 235 236 route symbol;
+#X obj 233 320 bang;
+#X obj 161 129 list;
+#X obj 190 164 unpack s;
+#X connect 0 0 5 0;
+#X connect 1 0 3 0;
+#X connect 1 0 7 0;
+#X connect 5 0 6 0;
+#X connect 6 0 4 0;
+#X connect 7 0 8 0;
+#X connect 8 0 5 1;

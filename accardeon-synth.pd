@@ -106,6 +106,9 @@
 #X obj 853 230 print control-message;
 #X obj 760 133 io-net-server-core;
 #X msg 759 65 io-net-server.config;
+#X obj 999 25 loadbang;
+#X obj 1001 62 delay 1000;
+#X msg 1001 104 \; pd dsp 1;
 #X connect 3 0 0 1;
 #X connect 3 0 30 0;
 #X connect 4 0 5 0;
@@ -137,3 +140,5 @@
 #X connect 35 0 33 0;
 #X connect 35 1 33 1;
 #X connect 36 0 31 0;
+#X connect 37 0 38 0;
+#X connect 38 0 39 0;

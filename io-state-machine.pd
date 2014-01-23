@@ -1,4 +1,4 @@
-#N canvas -4 22 1280 752 10;
+#N canvas 0 22 1280 752 10;
 #X obj 82 41 inlet reset-bang;
 #X obj 359 45 inlet incoming-message;
 #X obj 60 704 outlet reset-bang;
@@ -9,9 +9,9 @@
 #X obj 83 135 s \$0-reset-bang;
 #X obj 361 84 s \$0-incoming-messages;
 #X obj 60 223 r \$0-set-filter-message;
-#X obj 147 278 r \$0-incoming-messages;
-#X obj 60 351 toggle-control-core;
-#X obj 94 386 s \$0-out-message;
+#X obj 153 321 r \$0-incoming-messages;
+#X obj 66 394 toggle-control-core;
+#X obj 100 429 s \$0-out-message;
 #X obj 331 676 r \$0-out-message;
 #X obj 60 673 r \$0-reset-bang;
 #X obj 318 222 r \$0-set-filter-message;
@@ -34,9 +34,9 @@
 #X obj 1092 337 toggle-control-core;
 #X obj 1092 372 s \$0-out-message;
 #X msg 1092 240 mute-volume;
-#X obj 60 416 list;
-#X obj 60 448 unpack s f;
-#X obj 117 483 s \$0-2nd-bank-enabled;
+#X obj 66 459 list;
+#X obj 66 491 unpack s f;
+#X obj 123 526 s \$0-2nd-bank-enabled;
 #N canvas 394 383 922 334 start-stop-events 0;
 #X obj 123 117 r \$0-set-filter-message;
 #X obj 123 266 s \$0-out-message;
@@ -86,7 +86,7 @@
 #X restore 656 569 pd start-stop-events;
 #X obj 711 504 route-to-banks;
 #X obj 793 464 r \$0-2nd-bank-enabled;
-#X obj 60 308 event-filter;
+#X obj 66 351 event-filter;
 #X obj 318 307 event-filter;
 #X obj 568 300 event-filter;
 #X obj 816 298 event-filter;
@@ -163,9 +163,10 @@
 #X obj 1525 485 r \$0-incoming-messages;
 #X obj 1827 481 r \$0-incoming-messages;
 #X obj 2131 490 r \$0-incoming-messages;
+#X obj 60 292 t a a;
 #X connect 0 0 5 0;
 #X connect 1 0 8 0;
-#X connect 4 0 41 0;
+#X connect 4 0 72 0;
 #X connect 5 0 7 0;
 #X connect 5 1 6 0;
 #X connect 9 0 4 0;
@@ -230,3 +231,5 @@
 #X connect 69 0 56 1;
 #X connect 70 0 57 1;
 #X connect 71 0 58 1;
+#X connect 72 0 41 1;
+#X connect 72 1 41 0;

@@ -14,6 +14,7 @@
 #X msg 132 434 select-track 4;
 #X msg 132 471 start-stop;
 #X msg 130 509 track-speed;
+#X msg 129 544 track-delay;
 #X connect 0 0 7 0;
 #X connect 1 0 7 0;
 #X connect 2 0 7 0;
@@ -28,3 +29,4 @@
 #X connect 12 0 7 0;
 #X connect 13 0 7 0;
 #X connect 14 0 7 0;
+#X connect 15 0 7 0;

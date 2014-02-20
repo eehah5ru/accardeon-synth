@@ -1,4 +1,4 @@
-#N canvas 173 22 1200 670 10;
+#N canvas 366 73 1200 670 10;
 #N canvas 772 357 450 300 voice-output 0;
 #X obj 87 182 dac~;
 #X obj 91 49 inlet~;

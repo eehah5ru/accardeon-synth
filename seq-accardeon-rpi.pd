@@ -1,11 +1,11 @@
-#N canvas 4 22 1276 745 10;
+#N canvas 572 144 1276 745 10;
 #X obj 39 101 bng 30 250 50 0 empty empty init 17 7 0 10 -262144 -1
 -1;
 #X obj 39 136 io-seq-midi-controller;
 #N canvas 178 151 846 490 seq-machine 0;
 #X obj 19 27 inlet init-bang;
 #X obj 111 241 metro;
-#X obj 111 217 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 111 217 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X floatatom 154 156 5 0 0 0 - - -, f 5;
 #X obj 154 211 * 1000;
@@ -84,7 +84,7 @@
 #N canvas 0 22 1280 752 player-1 0;
 #N canvas 332 191 865 479 player 0;
 #X obj 117 130 hsl 128 15 0 1 0 0 empty empty playing_position -2 -8
-0 10 -262144 -1 -1 3868 1;
+0 10 -262144 -1 -1 0 1;
 #X floatatom 609 255 5 0 0 0 track_duration - -, f 5;
 #X obj 384 311 throw~ voice;
 #X obj 271 55 inlet init-bang;
@@ -138,7 +138,7 @@
 #N canvas 0 22 1280 752 player-2 0;
 #N canvas 332 191 865 479 player 0;
 #X obj 117 130 hsl 128 15 0 1 0 0 empty empty playing_position -2 -8
-0 10 -262144 -1 -1 11890 1;
+0 10 -262144 -1 -1 0 1;
 #X floatatom 609 255 5 0 0 0 track_duration - -, f 5;
 #X obj 384 311 throw~ voice;
 #X obj 271 55 inlet init-bang;
@@ -191,7 +191,7 @@
 #N canvas 0 22 1280 752 player-3 0;
 #N canvas 332 191 865 479 player 0;
 #X obj 117 130 hsl 128 15 0 1 0 0 empty empty playing_position -2 -8
-0 10 -262144 -1 -1 8162 1;
+0 10 -262144 -1 -1 0 1;
 #X floatatom 609 255 5 0 0 0 track_duration - -, f 5;
 #X obj 384 311 throw~ voice;
 #X obj 271 55 inlet init-bang;
@@ -244,7 +244,7 @@
 #N canvas 0 22 1280 752 player-4 0;
 #N canvas 332 191 865 479 player 0;
 #X obj 117 130 hsl 128 15 0 1 0 0 empty empty playing_position -2 -8
-0 10 -262144 -1 -1 2111 1;
+0 10 -262144 -1 -1 0 1;
 #X floatatom 609 255 5 0 0 0 track_duration - -, f 5;
 #X obj 384 311 throw~ voice;
 #X obj 271 55 inlet init-bang;
@@ -297,7 +297,7 @@
 #N canvas 0 22 1280 752 player-5 0;
 #N canvas 332 191 865 479 player 0;
 #X obj 117 130 hsl 128 15 0 1 0 0 empty empty playing_position -2 -8
-0 10 -262144 -1 -1 5252 1;
+0 10 -262144 -1 -1 0 1;
 #X floatatom 609 255 5 0 0 0 track_duration - -, f 5;
 #X obj 384 311 throw~ voice;
 #X obj 271 55 inlet init-bang;
@@ -350,7 +350,7 @@
 #N canvas 0 22 1280 752 player-6 0;
 #N canvas 332 191 865 479 player 0;
 #X obj 117 130 hsl 128 15 0 1 0 0 empty empty playing_position -2 -8
-0 10 -262144 -1 -1 4337 1;
+0 10 -262144 -1 -1 0 1;
 #X floatatom 609 255 5 0 0 0 track_duration - -, f 5;
 #X obj 384 311 throw~ voice;
 #X obj 271 55 inlet init-bang;
@@ -403,7 +403,7 @@
 #N canvas 0 22 1280 752 player-7 0;
 #N canvas 332 191 865 479 player 0;
 #X obj 117 130 hsl 128 15 0 1 0 0 empty empty playing_position -2 -8
-0 10 -262144 -1 -1 5277 1;
+0 10 -262144 -1 -1 0 1;
 #X floatatom 609 255 5 0 0 0 track_duration - -, f 5;
 #X obj 384 311 throw~ voice;
 #X obj 271 55 inlet init-bang;
@@ -513,6 +513,8 @@
 #X obj 39 84 loadbang;
 #X obj 267 443 catch~ voice;
 #X obj 256 490 dac~;
+#X obj 52 212 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
 #X connect 0 0 1 0;
 #X connect 1 0 20 0;
 #X connect 2 0 5 0;
@@ -526,3 +528,4 @@
 #X connect 21 0 0 0;
 #X connect 22 0 23 0;
 #X connect 22 0 23 1;
+#X connect 24 0 2 0;

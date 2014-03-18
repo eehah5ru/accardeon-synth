@@ -1,11 +1,11 @@
-#N canvas 269 266 1117 701 10;
+#N canvas 78 121 1117 701 10;
 #N canvas 189 85 1088 620 sample-player-core 0;
 #X obj 113 232 soundfiler;
 #X obj 147 257 expr 44100 / $f1;
 #X obj 164 414 phasor~;
 #X obj 118 445 *~;
 #X obj 50 31 inlet;
-#X obj 119 522 outlet~;
+#X obj 119 555 outlet~;
 #X obj 344 525 outlet;
 #X text 391 523 playing position;
 #X text 97 28 init bang;
@@ -33,7 +33,10 @@
 #X obj 622 481 r \$0-track-duration;
 #X obj -29 326 s \$0-track-duration;
 #X obj -29 296 expr $f1 / 44100;
-#X obj 857 95 inlet track-delay;
+#X obj 857 95 inlet volume-level;
+#X obj 860 141 s \$0-volume-level;
+#X obj 119 525 *~;
+#X obj 151 498 r \$0-volume-level;
 #X connect 0 0 1 0;
 #X connect 0 0 3 0;
 #X connect 0 0 32 0;
@@ -49,7 +52,7 @@
 #X connect 15 0 16 0;
 #X connect 16 0 0 0;
 #X connect 17 0 15 1;
-#X connect 18 0 5 0;
+#X connect 18 0 35 0;
 #X connect 20 0 23 0;
 #X connect 21 0 2 0;
 #X connect 22 0 21 0;
@@ -64,6 +67,9 @@
 #X connect 28 2 24 0;
 #X connect 30 0 29 0;
 #X connect 32 0 31 0;
+#X connect 33 0 34 0;
+#X connect 35 0 5 0;
+#X connect 36 0 35 1;
 #X coords 0 620 1 619 250 60 0;
 #X restore 109 120 pd sample-player-core;
 #X obj 36 17 inlet;
@@ -78,7 +84,7 @@
 #X text 697 20 track speed;
 #X obj 337 46 print start-stop;
 #X obj 495 204 outlet track-duration;
-#X obj 814 23 inlet track-delay;
+#X obj 814 23 inlet volume-level;
 #X connect 0 0 2 0;
 #X connect 0 1 4 0;
 #X connect 0 2 12 0;

@@ -8,9 +8,11 @@
 #X obj 180 453 outlet;
 #X obj 193 214 midi-note-filter;
 #X obj 178 351 toggle-control-core;
+#X obj 294 449 outlet out-value;
 #X connect 0 0 7 0;
 #X connect 2 0 7 1;
 #X connect 4 0 7 2;
 #X connect 7 0 8 0;
 #X connect 7 1 8 1;
 #X connect 8 0 6 0;
+#X connect 8 1 9 0;

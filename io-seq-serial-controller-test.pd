@@ -1,0 +1,18 @@
+#N canvas 584 66 673 543 10;
+#X msg 87 48 bang;
+#X obj 158 314 r ctrl-bus;
+#X obj 158 341 print control-message;
+#X obj 87 76 io-seq-serial-controller;
+#X obj 395 280 comport;
+#X msg 471 224 devicename /dev/ttys002;
+#X msg 364 216 127 2 1;
+#X msg 310 246 127 12 1;
+#X msg 301 218 127 6 1;
+#X msg 292 188 127 10 1;
+#X connect 0 0 3 0;
+#X connect 1 0 2 0;
+#X connect 5 0 4 0;
+#X connect 6 0 4 0;
+#X connect 7 0 4 0;
+#X connect 8 0 4 0;
+#X connect 9 0 4 0;

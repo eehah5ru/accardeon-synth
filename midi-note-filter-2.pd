@@ -1,4 +1,4 @@
-#N canvas 219 184 857 507 10;
+#N canvas 97 143 1043 576 10;
 #X text 226 30 input midi stream;
 #X obj 157 249 select;
 #X text 511 26 output message;
@@ -14,6 +14,7 @@
 #X obj 78 30 inlet input-midi-stream;
 #X obj 374 29 inlet output-message;
 #X obj 671 25 inlet config-midi-notes;
+#X obj 659 72 list trim;
 #X connect 1 0 10 0;
 #X connect 4 0 1 1;
 #X connect 6 0 1 0;
@@ -25,4 +26,5 @@
 #X connect 12 0 6 0;
 #X connect 13 0 7 0;
 #X connect 13 0 11 0;
-#X connect 14 0 8 0;
+#X connect 14 0 15 0;
+#X connect 15 0 8 0;

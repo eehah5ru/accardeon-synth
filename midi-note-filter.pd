@@ -15,6 +15,7 @@
 #X obj 63 42 inlet input-midi-stream;
 #X obj 640 40 inlet config-midi-notes-stream;
 #X obj 367 42 inlet output-message;
+#X obj 560 129 list trim;
 #X connect 1 0 12 0;
 #X connect 4 0 1 1;
 #X connect 6 0 1 0;
@@ -24,5 +25,6 @@
 #X connect 8 0 11 0;
 #X connect 9 0 7 1;
 #X connect 13 0 6 0;
-#X connect 14 0 7 0;
+#X connect 14 0 16 0;
 #X connect 15 0 8 0;
+#X connect 16 0 7 0;

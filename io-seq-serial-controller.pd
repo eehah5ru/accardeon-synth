@@ -235,6 +235,7 @@
 #X text 265 309 button state - 0 or 1;
 #X text 296 60 protocol of data packet is: 127<button number><button
 state><all other bytes before next 127 are ignored>;
+#X obj 118 73 print comport-raw-data;
 #X connect 0 0 10 0;
 #X connect 0 1 6 0;
 #X connect 1 0 2 0;
@@ -255,6 +256,7 @@ state><all other bytes before next 127 are ignored>;
 #X connect 11 0 3 1;
 #X connect 12 0 5 1;
 #X connect 13 0 0 0;
+#X connect 13 0 21 0;
 #X restore 151 268 pd protocol-parser;
 #N canvas 591 322 450 300 strip-commands 0;
 #X obj 37 16 inlet button-state;

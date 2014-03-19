@@ -7,7 +7,7 @@
 #X obj 111 241 metro;
 #X obj 111 217 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X floatatom 154 156 5 0 0 0 - - -, f 5;
+#X floatatom 154 156 5 0 0 0 - - -;
 #X obj 154 211 * 1000;
 #X obj 110 282 float;
 #X obj 176 281 + 1;
@@ -85,14 +85,14 @@
 #N canvas 332 191 865 479 player 0;
 #X obj 117 130 hsl 128 15 0 1 0 0 empty empty playing_position -2 -8
 0 10 -262144 -1 -1 0 1;
-#X floatatom 609 255 5 0 0 0 track_duration - -, f 5;
+#X floatatom 609 255 5 0 0 0 track_duration - -;
 #X obj 384 311 throw~ voice;
 #X obj 271 55 inlet init-bang;
 #X obj 419 56 inlet start-stop;
 #X obj 393 225 seq-sample-player;
 #X obj 561 53 inlet track-speed;
-#X floatatom 144 160 5 0 0 0 speed - -, f 5;
-#X floatatom 146 181 5 0 0 0 volume - -, f 5;
+#X floatatom 144 160 5 0 0 0 speed - -;
+#X floatatom 146 181 5 0 0 0 volume - -;
 #X obj 712 54 inlet volume-level;
 #X connect 3 0 5 0;
 #X connect 4 0 5 1;
@@ -110,7 +110,7 @@
 #X obj 271 132 seq-player-sequencer;
 #X obj 271 101 r \$0-init-bang;
 #X obj 515 -18 r \$0-set-settings;
-#X floatatom 202 137 5 0 0 0 track-no - -, f 5;
+#X floatatom 202 137 5 0 0 0 track-no - -;
 #X obj 110 -52 r \$0-init-bang;
 #X obj 109 24 file-name-selector;
 #X obj 214 -6 r config-sample-filename;
@@ -139,14 +139,14 @@
 #N canvas 332 191 865 479 player 0;
 #X obj 117 130 hsl 128 15 0 1 0 0 empty empty playing_position -2 -8
 0 10 -262144 -1 -1 0 1;
-#X floatatom 609 255 5 0 0 0 track_duration - -, f 5;
+#X floatatom 609 255 5 0 0 0 track_duration - -;
 #X obj 384 311 throw~ voice;
 #X obj 271 55 inlet init-bang;
 #X obj 419 56 inlet start-stop;
 #X obj 393 225 seq-sample-player;
 #X obj 561 53 inlet track-speed;
-#X floatatom 144 160 5 0 0 0 speed - -, f 5;
-#X floatatom 146 181 5 0 0 0 volume - -, f 5;
+#X floatatom 144 160 5 0 0 0 speed - -;
+#X floatatom 146 181 5 0 0 0 volume - -;
 #X obj 712 54 inlet volume-level;
 #X connect 3 0 5 0;
 #X connect 4 0 5 1;
@@ -164,7 +164,7 @@
 #X obj 271 132 seq-player-sequencer;
 #X obj 271 101 r \$0-init-bang;
 #X obj 515 -18 r \$0-set-settings;
-#X floatatom 202 137 5 0 0 0 track-no - -, f 5;
+#X floatatom 202 137 5 0 0 0 track-no - -;
 #X obj 110 -52 r \$0-init-bang;
 #X obj 109 24 file-name-selector;
 #X obj 214 -6 r config-sample-filename;
@@ -192,14 +192,14 @@
 #N canvas 332 191 865 479 player 0;
 #X obj 117 130 hsl 128 15 0 1 0 0 empty empty playing_position -2 -8
 0 10 -262144 -1 -1 0 1;
-#X floatatom 609 255 5 0 0 0 track_duration - -, f 5;
+#X floatatom 609 255 5 0 0 0 track_duration - -;
 #X obj 384 311 throw~ voice;
 #X obj 271 55 inlet init-bang;
 #X obj 419 56 inlet start-stop;
 #X obj 393 225 seq-sample-player;
 #X obj 561 53 inlet track-speed;
-#X floatatom 144 160 5 0 0 0 speed - -, f 5;
-#X floatatom 146 181 5 0 0 0 volume - -, f 5;
+#X floatatom 144 160 5 0 0 0 speed - -;
+#X floatatom 146 181 5 0 0 0 volume - -;
 #X obj 712 54 inlet volume-level;
 #X connect 3 0 5 0;
 #X connect 4 0 5 1;
@@ -217,7 +217,7 @@
 #X obj 271 132 seq-player-sequencer;
 #X obj 271 101 r \$0-init-bang;
 #X obj 515 -18 r \$0-set-settings;
-#X floatatom 202 137 5 0 0 0 track-no - -, f 5;
+#X floatatom 202 137 5 0 0 0 track-no - -;
 #X obj 110 -52 r \$0-init-bang;
 #X obj 109 24 file-name-selector;
 #X obj 214 -6 r config-sample-filename;
@@ -245,14 +245,14 @@
 #N canvas 332 191 865 479 player 0;
 #X obj 117 130 hsl 128 15 0 1 0 0 empty empty playing_position -2 -8
 0 10 -262144 -1 -1 0 1;
-#X floatatom 609 255 5 0 0 0 track_duration - -, f 5;
+#X floatatom 609 255 5 0 0 0 track_duration - -;
 #X obj 384 311 throw~ voice;
 #X obj 271 55 inlet init-bang;
 #X obj 419 56 inlet start-stop;
 #X obj 393 225 seq-sample-player;
 #X obj 561 53 inlet track-speed;
-#X floatatom 144 160 5 0 0 0 speed - -, f 5;
-#X floatatom 146 181 5 0 0 0 volume - -, f 5;
+#X floatatom 144 160 5 0 0 0 speed - -;
+#X floatatom 146 181 5 0 0 0 volume - -;
 #X obj 712 54 inlet volume-level;
 #X connect 3 0 5 0;
 #X connect 4 0 5 1;
@@ -270,7 +270,7 @@
 #X obj 271 132 seq-player-sequencer;
 #X obj 271 101 r \$0-init-bang;
 #X obj 515 -18 r \$0-set-settings;
-#X floatatom 202 137 5 0 0 0 track-no - -, f 5;
+#X floatatom 202 137 5 0 0 0 track-no - -;
 #X obj 110 -52 r \$0-init-bang;
 #X obj 109 24 file-name-selector;
 #X obj 214 -6 r config-sample-filename;
@@ -298,14 +298,14 @@
 #N canvas 332 191 865 479 player 0;
 #X obj 117 130 hsl 128 15 0 1 0 0 empty empty playing_position -2 -8
 0 10 -262144 -1 -1 0 1;
-#X floatatom 609 255 5 0 0 0 track_duration - -, f 5;
+#X floatatom 609 255 5 0 0 0 track_duration - -;
 #X obj 384 311 throw~ voice;
 #X obj 271 55 inlet init-bang;
 #X obj 419 56 inlet start-stop;
 #X obj 393 225 seq-sample-player;
 #X obj 561 53 inlet track-speed;
-#X floatatom 144 160 5 0 0 0 speed - -, f 5;
-#X floatatom 146 181 5 0 0 0 volume - -, f 5;
+#X floatatom 144 160 5 0 0 0 speed - -;
+#X floatatom 146 181 5 0 0 0 volume - -;
 #X obj 712 54 inlet volume-level;
 #X connect 3 0 5 0;
 #X connect 4 0 5 1;
@@ -323,7 +323,7 @@
 #X obj 271 132 seq-player-sequencer;
 #X obj 271 101 r \$0-init-bang;
 #X obj 515 -18 r \$0-set-settings;
-#X floatatom 202 137 5 0 0 0 track-no - -, f 5;
+#X floatatom 202 137 5 0 0 0 track-no - -;
 #X obj 110 -52 r \$0-init-bang;
 #X obj 109 24 file-name-selector;
 #X obj 214 -6 r config-sample-filename;
@@ -351,14 +351,14 @@
 #N canvas 332 191 865 479 player 0;
 #X obj 117 130 hsl 128 15 0 1 0 0 empty empty playing_position -2 -8
 0 10 -262144 -1 -1 0 1;
-#X floatatom 609 255 5 0 0 0 track_duration - -, f 5;
+#X floatatom 609 255 5 0 0 0 track_duration - -;
 #X obj 384 311 throw~ voice;
 #X obj 271 55 inlet init-bang;
 #X obj 419 56 inlet start-stop;
 #X obj 393 225 seq-sample-player;
 #X obj 561 53 inlet track-speed;
-#X floatatom 144 160 5 0 0 0 speed - -, f 5;
-#X floatatom 146 181 5 0 0 0 volume - -, f 5;
+#X floatatom 144 160 5 0 0 0 speed - -;
+#X floatatom 146 181 5 0 0 0 volume - -;
 #X obj 712 54 inlet volume-level;
 #X connect 3 0 5 0;
 #X connect 4 0 5 1;
@@ -376,7 +376,7 @@
 #X obj 271 132 seq-player-sequencer;
 #X obj 271 101 r \$0-init-bang;
 #X obj 515 -18 r \$0-set-settings;
-#X floatatom 202 137 5 0 0 0 track-no - -, f 5;
+#X floatatom 202 137 5 0 0 0 track-no - -;
 #X obj 110 -52 r \$0-init-bang;
 #X obj 109 24 file-name-selector;
 #X obj 214 -6 r config-sample-filename;
@@ -404,14 +404,14 @@
 #N canvas 332 191 865 479 player 0;
 #X obj 117 130 hsl 128 15 0 1 0 0 empty empty playing_position -2 -8
 0 10 -262144 -1 -1 0 1;
-#X floatatom 609 255 5 0 0 0 track_duration - -, f 5;
+#X floatatom 609 255 5 0 0 0 track_duration - -;
 #X obj 384 311 throw~ voice;
 #X obj 271 55 inlet init-bang;
 #X obj 419 56 inlet start-stop;
 #X obj 393 225 seq-sample-player;
 #X obj 561 53 inlet track-speed;
-#X floatatom 144 160 5 0 0 0 speed - -, f 5;
-#X floatatom 146 181 5 0 0 0 volume - -, f 5;
+#X floatatom 144 160 5 0 0 0 speed - -;
+#X floatatom 146 181 5 0 0 0 volume - -;
 #X obj 712 54 inlet volume-level;
 #X connect 3 0 5 0;
 #X connect 4 0 5 1;
@@ -429,7 +429,7 @@
 #X obj 271 132 seq-player-sequencer;
 #X obj 271 101 r \$0-init-bang;
 #X obj 515 -18 r \$0-set-settings;
-#X floatatom 202 137 5 0 0 0 track-no - -, f 5;
+#X floatatom 202 137 5 0 0 0 track-no - -;
 #X obj 110 -52 r \$0-init-bang;
 #X obj 109 24 file-name-selector;
 #X obj 214 -6 r config-sample-filename;
@@ -457,14 +457,14 @@
 #N canvas 332 191 865 479 player 0;
 #X obj 117 130 hsl 128 15 0 1 0 0 empty empty playing_position -2 -8
 0 10 -262144 -1 -1 0 1;
-#X floatatom 609 255 5 0 0 0 track_duration - -, f 5;
+#X floatatom 609 255 5 0 0 0 track_duration - -;
 #X obj 384 311 throw~ voice;
 #X obj 271 55 inlet init-bang;
 #X obj 419 56 inlet start-stop;
 #X obj 393 225 seq-sample-player;
 #X obj 561 53 inlet track-speed;
-#X floatatom 144 160 5 0 0 0 speed - -, f 5;
-#X floatatom 146 181 5 0 0 0 volume - -, f 5;
+#X floatatom 144 160 5 0 0 0 speed - -;
+#X floatatom 146 181 5 0 0 0 volume - -;
 #X obj 712 54 inlet volume-level;
 #X connect 3 0 5 0;
 #X connect 4 0 5 1;
@@ -482,7 +482,7 @@
 #X obj 271 132 seq-player-sequencer;
 #X obj 271 101 r \$0-init-bang;
 #X obj 515 -18 r \$0-set-settings;
-#X floatatom 202 137 5 0 0 0 track-no - -, f 5;
+#X floatatom 202 137 5 0 0 0 track-no - -;
 #X obj 110 -52 r \$0-init-bang;
 #X obj 109 24 file-name-selector;
 #X obj 214 -6 r config-sample-filename;

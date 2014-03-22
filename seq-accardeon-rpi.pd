@@ -1,4 +1,4 @@
-#N canvas -8 22 1276 745 10;
+#N canvas 29 22 1276 745 10;
 #X obj 39 101 bng 30 250 50 0 empty empty init 17 7 0 10 -262144 -1
 -1;
 #X obj 39 136 io-seq-midi-controller;
